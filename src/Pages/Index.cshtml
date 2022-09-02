@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Paul @ samways.id.au";
+}
+
+<section class="min-h-full container mx-auto flex flex-col justify-center gap-8">
+    <h1 class="text-7xl">Paul Samways</h1>
+    <h2 class="text-4xl">Senior Software Engineer</h2>
+    <p class="max-w-2xl">
+        I am a software engineer who has over fifteen years of experience in designing, developing and
+        maintaining software systems. I've held positions in a range of organisations, from <a
+            href="https://en.wikipedia.org/wiki/Micro_ISV" target="_blank">Micro ISVs</a> up to large
+        government research organisations.
+    </p>
+</section>
+
+@await Html.PartialAsync("_About.cshtml")
+
+@await Html.PartialAsync("_Skills.cshtml")
+
+@await Html.PartialAsync("_Experience.cshtml")
+
+@await Html.PartialAsync("_Education.cshtml")
+
+@await Html.PartialAsync("_Contact.cshtml")
