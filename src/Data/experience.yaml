@@ -1,0 +1,227 @@
+- name: Founder & Software Developer
+  organisation: OpenSimple
+  organisationUrl: https://opensimple.io
+  startDate: September 2021
+  description: OpenSimple is an Australian software development company providing services to public and private organisations within the Canberra region.
+  responsibilities:
+      - Provide software development consulting/contracting services to the Australian Government.
+  projects:
+      - name: Nyggle
+        url: https://nyggle.com
+        picture: img/nyggle.gif
+        pictureUrl: img/nyggle.gif
+        description: |
+
+            Nyggle was developed in collaboration with an ex-colleague to explore the area of customer
+            satisfaction for small-medium retail businesses. The product aims to be the online version of
+            a 'suggestion box', where customers can discreetly and anonymously provide feedback
+            to business owners when product or services do not meet their expectations.
+
+            The product presents to consumers as a mobile-first web application, written in React + ASP.NET, which
+            focuses on providing a quick and easy mechanism to submit feedback. Consumers can locate a business
+            by scanning QR codes located on phsyical displays, or by using the search functionality of the site.
+            PostgreSQL's FTS, and the PostGIS extension was used to provide quick, location aware, searching
+            of the OpenStreetMap data to locate businesses.
+
+            Dashboards, reporting and alerts are available to business owners to view feedback, and to
+            provide insights into their customer's satisfaction.
+
+            Nyggle is currently in an early staging testing.
+
+- name: Senior Analytics Engineer
+  organisation: AUSTRAC
+  organisationUrl: https://www.austrac.gov.au/
+  startDate: November 2019
+  responsibilities:
+      - >
+          Support and maintain a large Spark application which analyses financial transaction
+          reports. The application includes complex entity resolution algorithms which operate
+          over all reports held by AUSTRAC.
+      - >
+          Design, deploy and maintain the data science platform (Hadoop/Spark) used for exploratory
+          big-data analytics within AUSTRAC. The deployment of the platform was automated using
+          Ansible scripts which allowed our operations team to reliably and repeatably deploy the
+          system.
+      - >
+          Provide engineering support to the data scientists within the data division of AUSTRAC. Typically
+          this involved setting up Linux environments, building continuous integration pipelines,
+          deployment and tuning of Spark applications, ETL, etc.
+      - >
+          Develop a proof of concept distributed graph analysis system to enable the detection of financial crime 
+          within the Australian financial system.
+      - >
+          Promote and contribute to the culture of engineering excellence within the organisation.
+
+  projects:
+      - name: Alerting
+        description: |
+            The objective of the Alerting project was to deliver a system which could detect financial
+            crime within Australia's domestic system, without requiring reporting entities to submit
+            all domestic transaction information to AUSTRAC.
+
+            The system was built as a distributed computation system which allowed the analysis of
+            complex transaction graphs, where the connections between the accounts were
+            homomorphically encrypted, preventing the disclosure of any information which a node
+            does not already have.
+
+            The project team consisted of experts in mathematics and cryptography, whom worked in close
+            collaboration with software engineers to build a proof of concept to demonstrate
+            the capbility of the system. The proof of concept system used an emebedded DSL written in
+            Python to coordinate the workload out to the individual nodes which were written in Go.
+            Go was chosen by the team due to it's performance characteristics, and ability to interop
+            effortlessly with C++/CUDA libraries.
+
+            I was involved in the project from the very start of the engineering effort, and was responsible
+            for the design and development of the compute nodes. I was also involved with recruiting, and
+            growing the team to enable us to deliver the project on time.
+
+- name: Senior Software Engineer, Team Leader, Group Leader
+  organisation: NICTA / CSIRO Data61
+  organisationUrl: https://data61.csiro.au/
+  startDate: March 2016
+  endDate: 2019
+  responsibilities:
+      - >
+          As a software engineer, and in collaboration with research teams, design and develop
+          software systems which bring new innovative ideas out into the world.
+      - >
+          Communicate with the team and project stakeholders to determine priorities and goals of the
+          project, and understand what success looks like.
+      - >
+          Ensure that the teams are adequately resourced to deliver on their commitements, and have
+          the resources they need to succeed
+      - >
+          Coach the people in the team to help them work their best, and provide support/guidance when
+          they need it.
+  projects:
+      - name: Regulation as a Platform (RaaP)
+        url: https://data61.csiro.au/en/Our-Research/Our-Work/Future-Cities/Optimising-service-delivery/RaaP
+        description: |
+            Regulation as a Platform (RaaP) ran as a collaboration between the Dept. of Industry and CSIRO Data61
+            in the [NISA: Platforms for Open Data](https://www.industry.gov.au/data-and-publications/national-innovation-and-science-agenda-report)
+            program. Building upon the research conducted by the legal informatics team within Data61, 
+            we built a platform to encode parts of Australia's legislation as sets of digital logic rules, 
+            and proof of concept applications to demonstrate utility.
+
+            The platform consisted of multiple back-end services, written in Haskell, Scala or Python, and
+            deployed into a Kubernetes cluster running on the Google Cloud infrastructure. The platform's rule
+            authoring application was written in TypeScript using Mithril.js and designed as a single-page
+            application.
+      - name: ACTive Community
+        url: https://www.canberra.edu.au/research/institutes/health-research-institute/research-areas/active-community-project
+        description: |
+            ACTive Community was a program run by the University of Canberra to investigate the activity levels
+            of Canberrans through fitness tracking devices. The development of the system used to register
+            participant devices and collect data over the study period was conducted by CSIRO Data61, in which I was
+            the principal software engineer.
+
+            The system required a web front-end, written as a single-page application using the Mithril.js
+            library, which enabled participants to join the study and connect their Fitbit or Garmin fitness
+            devices.
+            Once a device was connected, we were able to retrieve the participant's activity history and then poll
+            each day for new fitness data. The RESTful API and background polling mechanism was written in Haskell
+            and deployed alongside a PostgreSQL database.
+
+            The project was considered a great success with over 1000 participants registered and contributing
+            data, with no downtime or known defects in the system.
+
+- name: Senior Software Developer
+  organisation: Australian Building Codes Board
+  organisationUrl: https://www.abcb.gov.au/
+  startDate: July 2012
+  endDate: July 2013
+  responsibilities:
+      - Support, and maintain existing business applications
+      - Digital Rights Management (DRM) solution
+      - Customer management systems
+      - Ticketing system
+      - XML based desktop publishing software for the NCC/BCC
+      - Administer and extend the public-facing Sitecore CMS instance
+      - Providing guidance on WCAG 2.0 compliance for all electronic media
+  projects:
+      - name: Certification Management System
+        description: |
+            As part of a broader project to move an industry certification scheme to ABCB, we were
+            required to take ownership of an existing software solution which was used by industry
+            to manage certificates and product catalogues.
+
+            When we received the software, we assessed it for suitability in our environment and found
+            that it was unsuitable due to a considerable number of security issues. These issues
+            included vulnerabilities such as SQL injection, broken authentication/credential management, and
+            a design which allowed the client (browser) to access data in an uncontrolled way.
+
+            Due to the constraints around the project, we were not able to change the dates of when
+            we were required to have the software operational. After discussion with the stakeholders
+            and management, it was decided that I would spend a month rewriting/refactoring the
+            application layer to bring it up to the standard we required to deploy to our servers.
+
+            I was able to achieve feature parity and address all known security issues, and we successfully
+            deployed the application by the required date.
+
+      - name: XML Publishing System
+        description: |
+            Part of the ABCB's responsibilities is to produce the national construction and building codes.
+            These codes were published, at the time, as a set of printed technical books which were authored
+            in-house by the technical team. Management and ownership of the software platform was handled by
+            our team.
+
+            When I joined the organisation, it had been close to ten years since the system had been deployed
+            and was starting to show its age. There were many bugs and issues which had arisen and, while it
+            was possible to work around them, it caused significant friction between the teams. I volunteered
+            to spend time understanding how the various components fit together, and resolve as many of the issues
+            as I could. I was able to resolve all the known issues and produced documentation to support
+            maintainance in the future.
+
+            The authoring platform consisted of many individual commerical and open source applications,
+            integrated together using a combination of Java, JavaScript, .NET and XML/XSLT processors.
+
+- name: Software Developer
+  organisation: VSoft Technologies
+  organisationUrl: https://www.finalbuilder.com/
+  startDate: 2006
+  endDate: June 2012
+  responsibilities:
+      - Design and development of the continuous integration tool, [ContinuaCI](https://www.finalbuilder.com/continua-ci)
+      - Design, development and support of the continuous integration tool, [FinalBuilder Server](https://www.finalbuilder.com/finalbuilder-server)
+      - Continued development and support of the company's initial flagship product, [FinalBuilder](https://www.finalbuilder.com/finalbuilder)
+      - Development and support of the company's ecommerce solution written as a DotNetNuke extension<
+      - Provide all levels of support to our customers, and understanding their needs and requirments to help set product direction.
+      - Participate in a wide range of business discussions including pricing, licensing, marketing and sales
+  projects:
+      - name: FinalBuilder Server
+        url: https://www.finalbuilder.com/finalbuilder-server
+        description: |
+            FinalBuilder was the company's flaghsip product and was leading the way in build automation,
+            particulary in the Delphi world, back before CI/CD was common practice. When I joined the
+            company it was becoming apparent that our users wanted to have a web-based application in
+            which the could start and monitor their FinalBuilder-backed software builds.
+
+            It wasn't long after working with the team on this new project that I was given the responsibility
+            of leading the development of it. Since the company had predominately been Delphi focused,
+            but wanted to expand into the new .NET ecosystem, it was decided that it would use .NET/C#
+            to write the web application and supporting Windows services.
+
+            I regard this project as one of the great successes of my career so far and often admire what we were
+            able to achieve with so few resources. The were able to build a lot of great relationships with
+            our customers, and provide them with software they genuinely loved and were excited about.
+
+      - name: ContinuaCI
+        url: https://www.finalbuilder.com/continua-ci
+        description: |
+            Continua CI was the replacement for FinalBuilder Server, and was envisiond to be the company's
+            solution to a build-tool agnostic and modern continuous integration platform.
+
+            Continuing on from the development of FinalBuilder Server, it was my responsibility to architect,
+            design and begin development of our new product. The design split out the components into multiple
+            services; web application, build coordinator and build agents. They services communicated with
+            each other using WCF, with the coordinator using PostgreSQL as the data store.
+
+            Noteworthy parts of the project which I developed include:
+
+              - Building extension points in the application which enabled the development of plugins. The system 
+                used AppDomains to isolate loading of foreign assemblies, and allowed plugins to be reloaded.
+              - Using .NET attributes to decorate plugin class properties, and then using these properties to
+                generating web controls for editing/viewing in the interface.
+              - Build workflow engine. FinalBuilder was known for it's graphical interface and we wanted
+                to replicate this kind of visual environment in the browser. I designed the workflow engine, and the
+                web interface for constructing build workflows.

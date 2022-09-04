@@ -35,6 +35,8 @@ roslynator_accessor_braces_style = single_line_when_expression_is_on_single_line
 dotnet_diagnostic.rcs0044.severity = none
 # Add blank line between single-line declarations
 dotnet_diagnostic.rcs0012.severity = none
+# Mark publicly visible type with DebuggerDisplay attribute
+dotnet_diagnostic.rcs1223.severity = none
 
 # Organize usings
 dotnet_sort_system_directives_first = true

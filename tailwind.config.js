@@ -9,5 +9,7 @@ module.exports = {
       mono: ['Share Tech Mono', 'monospace'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
