@@ -1,27 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using PaulSamways.Models;
+using PaulSamways.Services;
 
 namespace PaulSamways.Pages;
 
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
-    private readonly IWebHostEnvironment _webHostEnvironment;
+    private readonly DataService _data;
 
-    public IndexModel(ILogger<IndexModel> logger, IWebHostEnvironment webHostEnvironment)
+    public IndexModel(ILogger<IndexModel> logger, DataService data)
     {
         _logger = logger;
-        _webHostEnvironment = webHostEnvironment;
+        _data = data;
 
         Positions = Array.Empty<Position>();
     }
 
     public IEnumerable<Position> Positions { get; set; }
 
+    public IEnumerable<SkillCategory> Skills { get; set; }
+
     public void OnGet()
     {
-        using var stream = _webHostEnvironment.ContentRootFileProvider.GetFileInfo("Data/experience.yaml").CreateReadStream();
-        using var reader = new StreamReader(stream);
-        Positions = Position.FromYaml(reader);
+        Positions = _data.Positions;
+        Skills = _data.Skills;
     }
 }

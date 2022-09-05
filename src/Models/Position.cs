@@ -28,14 +28,5 @@ namespace PaulSamways.Models
         public string? Description { get; set; }
         public IList<string> Responsibilities { get; set; }
         public IList<Project> Projects { get; set; }
-
-        public static IEnumerable<Position> FromYaml(TextReader source)
-        {
-            var yaml = new DeserializerBuilder()
-                .WithNamingConvention(CamelCaseNamingConvention.Instance)
-                .Build();
-
-            return yaml.Deserialize<IEnumerable<Position>>(source);
-        }
     }
 }

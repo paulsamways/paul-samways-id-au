@@ -1,0 +1,150 @@
+- category: Programming Languages
+  skills:
+    - name: .NET / C#
+      imageUrl: img/technologies/csharp.svg
+      description: |
+        .NET / C# has been a cornerstone of my career and I have been using and following it's development
+        since back before C# had Generics. While there have been other many languages I've used
+        over my career, it's safe to say I'm still a big fan of .NET. Microsoft's recent effort in making
+        it cross-platform and open-source has been an exciting development in it's history, and one which
+        gives me confidence in continuing to invest in the ecosystem.
+      projects:
+        - nyggle
+        - keebit
+        - certification-management-system
+        - finalbuilder-server
+        - continuaci
+    
+    - name: Typescript
+      imageUrl: img/technologies/typescript.svg
+      description: |
+        TypeScript, at least to me, has been a wonderful and pragmatic way to improve the situation
+        surrounding client-side web development. I'm a big fan of strongly and statically typed langauges,
+        and TypeScript continues to impress with how expressive the type system is and how successfully
+        types have been retrofitted to a language like JavaScript.
+      projects:
+        - nyggle
+        - regulation-as-a-platform-(raap)
+        - active-community
+    
+    - name: Go
+      imageUrl: img/technologies/go.svg
+      description: |
+        While I have only had to the opportunity to use Go professionally for one project, it is a
+        language I would comfortably say I am proficient in. Its simplicity and tooling make it quick to
+        learn, and I have witnessed this as new developers have joined the team and been able to
+        hit the ground running.
+      projects:
+        - alerting
+
+    - name: Haskell
+      imageUrl: img/technologies/haskell.png
+      description: |
+        Haskell was a spike in my professional career to learn functional programming. Having the
+        opportunity to work with some of the top functional programmers while at CSIRO Data61, and 
+        seeing just how far down the rabbit hole you can go with types was certainly an experience 
+        that challenged me in many ways. Functors, applicative functors, monads, monad transformers 
+        and the rest all became part of my thinking how to compose software, and it really did open 
+        my eyes to a whole other world.
+      projects:
+        - regulation-as-a-platform-(raap)
+        - active-community
+
+- category: Web
+  description: |
+    Having started my career in the mid-2000s, the web has almost always played a role in the projects
+    I've been involved with. I have a good understanding of the underlying standards, practices and technologies,
+    i.e., HTML, CSS, Browser Web APIs, API design standards and the HTTP protocol, and are able to apply 
+    them when using new libraries or frameworks.
+  skills:
+    - name: ASP.NET
+      imageUrl: img/technologies/dotnetcore.svg
+      description: |
+        ASP.NET (Web Forms, MVC, Pages, Web APIs) has been the predominant back-end framework which I've
+        used to build web-based applications and services. The majority of my experience has been with
+        ASP.NET MVC, which was a favourable switch from Web Forms when it was first released.
+      projects:
+        - nyggle
+        - keebit
+        - finalbuilder-server
+        - continua-ci
+
+    - name: React
+      imageUrl: img/technologies/react.svg
+      description: |
+        React (and similarily, Mithril.js) have been my go-to libraries for writing rich client-side
+        web applications. I've used these libraries to write both single-page applications, and to
+        write client-side components for server-rendered pages.
+      projects:
+        - nyggle
+        - regulation-as-a-platform-(raap)
+        - active-community
+
+    - name: Blazor
+      imageUrl: img/technologies/blazor.svg
+      description: |
+        Using ASP.NET's Blazor in a personal project has allowed me to evaluate how well the new framework
+        works for non-trivial applications. I have been pleasantly suprised with how well it works,
+        how far you can get without falling back to JavaScript, and how well it performs overall. I'm eager
+        to see whether it will continue to improve, and lead the way for WASM based client-side web
+        development.
+      projects:
+        - keebit
+    
+- category: Databases, and data processing
+  skills:
+    - name: PostgreSQL
+      imageUrl: img/technologies/postgresql.png
+      description: |
+        PostgreSQL has been utilized in a wide range of projects throughout my career, and I'm comfortable
+        designing new database schemas/models, writing complex SQL queries, analysing query execution plans
+        to work out performance issues, and generally any database related task.
+      projects:
+        - alerting
+        - nyggle
+        - regulation-as-a-platform-(raap)
+        - active-community
+        - continuaci
+
+    - name: Apache Spark
+      imageUrl: img/technologies/spark.svg
+      description: |
+        Apache Spark (and Apache Hadoop) was the distributed processing framework used to process
+        billions of transaction reports at AUSTRAC. My role as an analytics engineer involved maintaining
+        complex data processing pipelines and algorithms, and provided with experience on how to do this
+        on truly big data.
+
+- category: DevOps
+  skills:
+    - name: Linux
+      imageUrl: img/technologies/linux.svg
+      description: |
+        Linux has always been my preferred operating system, despite being a Windows developer for quite
+        a good portion of my career. My interest goes all the way back to high school, where I'd
+        spend (seriously) countless hours tinkering and trying out different distributions. Peak
+        nerd was persisting with ([Linux From Scratch](https://www.linuxfromscratch.org/)) on my 
+        old Pentium 133Mhz which would take about a week to compile the entire system. 🤓
+
+        This passion has become a great benefit with Linux becoming the defacto operating system used in
+        the cloud. It's given me the foundamental knowledge to understand how modern deploymnent tools like
+        containerisation work, and allows me to quickly get up to speed with new tools and techniques.
+
+        I frequently utilise automation tools, such as Terraform and Ansible, along with simple bash
+        scripts, to make processes repeatable and dependable.
+
+    - name: Amazon Web Services
+      imageUrl: img/technologies/aws.svg
+      description: |
+        I have experience with the various with cloud providers, such as AWS, GCloud, Vultr, etc, and
+        have used a variety of their hosted services. I've deploy and managed applications deployed to
+        orchestration platforms such as Kubernetes, and AWS Fargate, and would be interested
+        in gaining more experience in this area.
+
+- category: Development tools and practices
+  skills:
+    - name: Git
+      imageUrl: img/technologies/git.svg
+      description: |
+        Git is an indispensible tool in my toolbox, and one which I'm constantly learning to use more
+        effectively. I've worked in teams which take great pride in having clean Git history and have
+        learnt many of the more 'advanced' Git features.

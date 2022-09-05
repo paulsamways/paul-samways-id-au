@@ -13,6 +13,16 @@ namespace PaulSamways.Models
             Description = description;
         }
 
+        public string Id
+        {
+            get
+            {
+                return Name
+                    .ToLower()
+                    .Replace(' ', '-');
+            }
+        }
+
         public string Name { get; set; }
         public string? Url { get; set; }
         public string? Picture { get; set; }

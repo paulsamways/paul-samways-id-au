@@ -1,5 +1,26 @@
+@model IEnumerable<SkillCategory>
+
 <section id="skills" class="min-h-full container mx-auto pb-8 flex flex-col justify-center">
     <h2 class="text-2xl mb-8">02. Skills</h2>
+
+    <div class="flex flex-wrap gap-4">
+        @foreach (var category in Model) 
+        {
+            @foreach (var skill in category.Skills)
+            {
+                <details class="min-w-64 min-h-32 block border rounded border-zinc-700 bg-zinc-800 p-4">
+                    <summary>
+                        <img src="@skill.ImageUrl" class="float-right" style="width: 48px" alt="@skill.Name Logo" />
+                        <h3 class="text-lg">@skill.Name</h3>
+                    </summary>
+
+                    <div>
+                        @Html.Raw(Markdig.Markdown.ToHtml(skill.Description))
+                    </div>
+                </details>
+            }
+        }
+    </div>
 
     <h3>Programming languages</h3>
     <p>

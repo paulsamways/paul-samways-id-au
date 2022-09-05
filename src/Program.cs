@@ -1,3 +1,5 @@
+using PaulSamways.Services;
+
 namespace PaulSamways
 {
     public static class Program
@@ -7,6 +9,7 @@ namespace PaulSamways
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSingleton<DataService>();
             builder.Services.AddRazorPages();
 
             var app = builder.Build();

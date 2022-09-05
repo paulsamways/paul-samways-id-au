@@ -40,11 +40,11 @@
                         {
                             if (!string.IsNullOrEmpty(project.Url))
                             {
-                                <h5><a href="@project.Url" target="_blank">@project.Name</a></h5>
+                                <h5 id="@project.Id"><a href="@project.Url" target="_blank">@project.Name</a></h5>
                             }
                             else
                             {
-                                <h5>@project.Name</h5>
+                                <h5 id="@project.Id">@project.Name</h5>
                             }
 
                             @Html.Raw(Markdig.Markdown.ToHtml(@project.Description))
