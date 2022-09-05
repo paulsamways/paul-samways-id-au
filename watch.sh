@@ -2,10 +2,11 @@
 set -e
 
 DIR=$(dirname "$0")
-    
+
 tmux \
     new-session \; \
-    split-window -h "cd $DIR/src && dotnet watch" \; \
-    split-window "npx tailwindcss -i $DIR/src/wwwroot/css/_site.css -o $DIR/src/wwwroot/css/site.css --watch" \; \
+    split-window -h "cd $DIR/src/Site && bash -c 'trap \"bash\" INT; ./watch.sh'" \; \
+    split-window "cd $DIR/src/Styles && bash -c 'trap \"bash\" INT; ./watch.sh'" \; \
+    split-window "cd $DIR/src/Scripts && bash -c 'trap \"bash\" INT; ./watch.sh'" \; \
     select-pane -t 0
     

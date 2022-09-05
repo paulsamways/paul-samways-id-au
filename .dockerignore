@@ -9,5 +9,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
-/src/wwwroot/css/site.css
-/src/appsettings.Development.json
+appsettings.Development.json
+
+/dist/
+/src/Site/PaulSamways/wwwroot/css/*
+/src/Site/PaulSamways/wwwroot/js/*

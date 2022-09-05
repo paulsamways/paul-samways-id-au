@@ -1,6 +1,7 @@
 function space(canvas) {
     const c = canvas.getContext("2d");
 
+    
     let w;
     let h;
 

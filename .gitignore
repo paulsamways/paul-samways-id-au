@@ -3,3 +3,7 @@ bin/
 obj/
 
 appsettings.Development.json
+
+/dist/
+/src/Site/PaulSamways/wwwroot/css/*
+/src/Site/PaulSamways/wwwroot/js/*

@@ -1,29 +1,30 @@
-FROM node as build-css
+FROM node as build-styles
 WORKDIR /build
 
 COPY ./src ./src
-COPY ./package.json ./
-COPY ./package-lock.json ./
-COPY ./tailwind.config.js ./
+RUN cd ./src/Styles && \
+        npm install && \
+        ./build.sh
 
-RUN npm install && \
-    NODE_ENV=production npx tailwindcss -i ./src/wwwroot/css/_site.css -o ./src/wwwroot/css/site.css -c ./tailwind.config.js --minify
-
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-dotnet
+FROM node as build-scripts
 WORKDIR /build
 
-# copy csproj and restore as distinct layers
-COPY ./src/*.csproj ./
+COPY ./src/Scripts ./src/Scripts
+RUN cd ./src/Scripts && \
+        npm install && \
+        ./build.sh
 
-RUN dotnet restore 
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-site
+WORKDIR /build
 
-# copy everything else and build app
-COPY ./src/. ./
-COPY --from=build-css /build/src/wwwroot/css/site.css ./wwwroot/css/site.css
+COPY ./src/Site ./src/Site
+COPY --from=build-styles /build/src/Site/PaulSamways/wwwroot/css/site.css ./src/Site/PaulSamways/wwwroot/css/site.css
+COPY --from=build-scripts /build/src/Site/PaulSamways/wwwroot/js ./src/Site/PaulSamways/wwwroot/js
 
-RUN dotnet publish -c Release -o out
+RUN ./src/Site/build.sh
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 
 VOLUME ["/root/.aspnet/DataProtection-Keys"]
@@ -40,6 +41,6 @@ RUN localedef -i en_AU -f UTF-8 en_AU.UTF-8 && \
 ENV LANG en_AU.UTF-8
 ENV LANGUAGE en_AU:en
 
-COPY --from=build-dotnet /build/out ./
+COPY --from=build-site /build/dist ./
 
-ENTRYPOINT ["dotnet", "paul-samways-id-au.dll"]
+ENTRYPOINT ["dotnet", "PaulSamways.dll"]
