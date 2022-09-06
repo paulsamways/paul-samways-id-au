@@ -3,4 +3,4 @@ set -e
 
 cd "$(dirname "$0")"
 
-npx tsc -outdir ../Site/PaulSamways/wwwroot/js --watch
+npx rollup -c --watch

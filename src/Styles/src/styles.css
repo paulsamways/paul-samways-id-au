@@ -15,4 +15,17 @@
         @apply rounded-full;
         @apply bg-zinc-700;
     }
+
+    #skillsTree .link {
+        @apply stroke-zinc-700;
+        @apply stroke-2;
+    }
+    #skillsTree .node-circle {
+        @apply fill-zinc-900;
+        @apply stroke-zinc-700;
+        @apply stroke-2;
+    }
+    #skillsTree .node-text {
+        @apply fill-zinc-200;
+    }
 }
