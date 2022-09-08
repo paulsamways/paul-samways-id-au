@@ -19,7 +19,7 @@ public class IndexModel : PageModel
 
     public IEnumerable<Position> Positions { get; set; }
 
-    public IEnumerable<SkillCategory> Skills { get; set; }
+    public Skill Skills { get; set; }
 
     public void OnGet()
     {

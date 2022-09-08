@@ -1,24 +1,24 @@
-import { renderSkillsTree } from "./skills-tree";
+import { renderSkillsTree, Skill } from "./skills-tree";
+import { marked } from "marked";
 
 document.addEventListener("DOMContentLoaded", () => {
     var treeContainer = document.querySelector<HTMLElement>("#skillsTree");
     if (treeContainer !== null) {
-        renderSkillsTree(treeContainer, {
-            name: "Programming Languages",
-            image: "/img/technologies/go.svg",
-            children: [
-                {
-                    name: ".NET / C#", image: "/img/technologies/dotnetcore.svg", children: [
-                        { name: "Go", image: "/img/technologies/go.svg", children: [] },
-                        { name: "TypeScript", image: "/img/technologies/typescript.svg", children: [] },
-                    ]
-                },
-                { name: "Go", image: "/img/technologies/go.svg", children: [] },
-                {
-                    name: "TypeScript", image: "/img/technologies/typescript.svg", children: [{ name: "Go", image: "/img/technologies/go.svg", children: [] },
-                    { name: "TypeScript", image: "/img/technologies/typescript.svg", children: [] },]
-                },
-            ]
+        const data = (window as any).skillsJson;
+
+        renderSkillsTree(treeContainer, data)
+
+        treeContainer.addEventListener("skill-click", (e) => {
+            
+            const dialog = treeContainer?.querySelector<HTMLDialogElement>("dialog");
+            const dialogContent = dialog?.querySelector<HTMLDivElement>(".content");
+
+            if (dialog && dialogContent) {
+                const skill = (<CustomEvent<Skill>>e).detail;
+
+                dialogContent.innerHTML = marked.parse(skill.description ?? "");
+                dialog.showModal();
+            }
         })
     }
 }, false);

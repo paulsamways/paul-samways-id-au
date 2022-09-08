@@ -16,9 +16,27 @@
         @apply bg-zinc-700;
     }
 
+    #skillsTree {
+        @apply flex;
+        @apply justify-center;
+    }
+    #skillsTree svg {
+        @apply max-w-5xl;
+    }
     #skillsTree .link {
+        @apply fill-transparent;
         @apply stroke-zinc-700;
-        @apply stroke-2;
+        @apply stroke-1;
+    }
+    #skillsTree .node-active {
+        @apply cursor-pointer;
+    }
+    #skillsTree .node-active > .node-circle {
+        @apply stroke-zinc-500;
+        @apply animate-pulse;
+    }
+    #skillsTree .node-active:hover > .node-circle {
+        @apply stroke-zinc-500;
     }
     #skillsTree .node-circle {
         @apply fill-zinc-900;
@@ -27,5 +45,10 @@
     }
     #skillsTree .node-text {
         @apply fill-zinc-200;
+    }
+    #skillsTree .node-text-star {
+        @apply fill-yellow-600;
+        @apply stroke-zinc-700;
+        @apply stroke-1;
     }
 }

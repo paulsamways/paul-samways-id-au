@@ -26,5 +26,8 @@
 @await Html.PartialAsync("_Contact.cshtml")
 
 @section Head {
+    <script>
+        window.skillsJson = @Json.Serialize(Model.Skills);
+    </script>
     <script src="/js/index.js" defer></script>
 }

@@ -21,7 +21,7 @@ namespace PaulSamways.Services
 
             Positions = Array.Empty<Position>();
             Projects = new Dictionary<string, Project>();
-            Skills = Array.Empty<SkillCategory>();
+            Skills = new Skill();
 
             Load();
             ChangeToken.OnChange(() => _webHostEnvironment.ContentRootFileProvider.Watch("Data/*"), Load);
@@ -29,14 +29,14 @@ namespace PaulSamways.Services
 
         public IEnumerable<Position> Positions { get; private set; }
         public IReadOnlyDictionary<string, Project> Projects { get; private set; }
-        public IEnumerable<SkillCategory> Skills { get; private set; }
+        public Skill Skills { get; private set; }
 
         public void Load()
         {
             _logger.LogInformation("Loading data from Yaml");
 
             Positions = FromYaml<IEnumerable<Position>>(ExperienceYaml);
-            Skills = FromYaml<IEnumerable<SkillCategory>>(SkillsYaml);
+            Skills = FromYaml<Skill>(SkillsYaml);
 
             Projects = Positions
                 .SelectMany(x => x.Projects)
