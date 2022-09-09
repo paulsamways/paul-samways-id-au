@@ -181,18 +181,12 @@ children:
               image: img/technologies/ansible.svg
         - name: Cloud
           image: "/img/heroicon-cloud.svg"
-          children: 
-            - name: Amazon Web Services
-              level: 2
-              image: img/technologies/aws.svg
-              description: |
+          level: 3
+          description: |
                   I have experience with the various with cloud providers, such as AWS, GCloud, Vultr, etc, and
                   have used a variety of their hosted services. I've deploy and managed applications deployed to
                   orchestration platforms such as Kubernetes, and AWS Fargate, and would be interested
                   in gaining more experience in this area.
-            - name: Google Cloud Platform
-              image: /img/technologies/google.svg
-              level: 1
         - name: VCS, CI/CD
           image: img/heroicon-code-bracket-square.svg
           children:
@@ -203,7 +197,7 @@ children:
                   Git is an indispensible tool in my toolbox, and one which I'm constantly learning to use more
                   effectively. I've worked in teams which take great pride in having clean Git history and have
                   learnt many of the more 'advanced' Git features.
-            - name: Github actions
+            - name: Github
               level: 2
               image: /img/technologies/github.svg
             - name: Gitlab

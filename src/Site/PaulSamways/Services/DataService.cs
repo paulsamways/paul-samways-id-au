@@ -33,7 +33,7 @@ namespace PaulSamways.Services
 
         public void Load()
         {
-            _logger.LogInformation("Loading data from Yaml");
+            _logger.LogInformation("Data changed, reloading...");
 
             Positions = FromYaml<IEnumerable<Position>>(ExperienceYaml);
             Skills = FromYaml<Skill>(SkillsYaml);

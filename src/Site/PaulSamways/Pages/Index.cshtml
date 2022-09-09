@@ -31,3 +31,12 @@
     </script>
     <script src="/js/index.js" defer></script>
 }
+@section Header {
+    <header class="h-24 px-8 flex-shrink-0 flex items-center justify-end gap-8">
+        <a asp-page="Index" asp-fragment="about">01. <span class="text-zinc-200">About</span></a>
+        <a asp-page="Index" asp-fragment="skills">02. <span class="text-zinc-200">Skills</span></a>
+        <a asp-page="Index" asp-fragment="experience">03. <span class="text-zinc-200">Experience</span></a>
+        <a asp-page="Index" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
+        <a asp-page="Index" asp-fragment="contact">05. <span class="text-zinc-200">Contact</span></a>
+    </header>
+}

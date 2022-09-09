@@ -13,7 +13,19 @@
     }
     *::-webkit-scrollbar-thumb {
         @apply rounded-full;
-        @apply bg-zinc-700;
+        @apply bg-yellow-700;
+    }
+    *::-webkit-scrollbar-thumb:hover {
+        @apply bg-yellow-500;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        @apply text-yellow-500;
+    }
+    button, a {
+        @apply text-yellow-600;
+    }
+    button:hover, a:hover {
+        @apply text-yellow-500;
     }
 
     #skillsTree {
@@ -32,14 +44,13 @@
         @apply cursor-pointer;
     }
     #skillsTree .node-active > .node-circle {
-        @apply stroke-zinc-500;
-        @apply animate-pulse;
+        @apply stroke-yellow-700;
     }
     #skillsTree .node-active:hover > .node-circle {
-        @apply stroke-zinc-500;
+        @apply stroke-yellow-500;
     }
     #skillsTree .node-circle {
-        @apply fill-zinc-900;
+        @apply fill-zinc-800;
         @apply stroke-zinc-700;
         @apply stroke-2;
     }
@@ -50,5 +61,10 @@
         @apply fill-yellow-600;
         @apply stroke-zinc-700;
         @apply stroke-1;
+    }
+
+    button.position.active {
+        @apply border-yellow-500;
+        @apply bg-zinc-900
     }
 }

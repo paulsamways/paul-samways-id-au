@@ -17,13 +17,13 @@ public class IndexModel : PageModel
         Positions = Array.Empty<Position>();
     }
 
-    public IEnumerable<Position> Positions { get; set; }
+    public Position[] Positions { get; set; }
 
     public Skill Skills { get; set; }
 
     public void OnGet()
     {
-        Positions = _data.Positions;
+        Positions = _data.Positions.ToArray();
         Skills = _data.Skills;
     }
 }

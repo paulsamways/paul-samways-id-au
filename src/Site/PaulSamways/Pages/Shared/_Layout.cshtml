@@ -17,26 +17,16 @@
     @await RenderSectionAsync("Head", required: false)
 </head>
 
-<body class="flex h-full bg-zinc-900 text-zinc-200 font-mono">
-    <div class="w-24 flex-shrink-0">
+<body class="h-full bg-zinc-900 text-zinc-200 font-mono flex flex-col overflow-hidden">
 
-    </div>
-    <div class="flex-grow flex flex-col overflow-hidden">
-        <header class="h-24 px-8 flex-shrink-0 flex items-center justify-end gap-8">
-            <a href="#about">01. About</a>
-            <a href="#skills">02. Skills</a>
-            <a href="#experience">03. Experience</a>
-            <a href="#education">04. Education</a>
-            <a href="#contact">05. Contact</a>
-        </header>
-        <main class="flex-grow overflow-y-auto">
-            @RenderBody()
-            
-        </main>
-        <footer class="h-24 flex-shrink-0 flex items-center justify-center">
-            Designed and built by Paul Samways
-        </footer>
-    </div>
+    @await RenderSectionAsync("Header", required: false)
+
+    <main class="flex-grow overflow-y-auto">
+        @RenderBody()
+    </main>
+    <footer class="h-12 flex-shrink-0 flex items-center justify-center text-zinc-400 text-sm">
+        Designed and built by Paul Samways.
+    </footer>
 </body>
 
 </html>
