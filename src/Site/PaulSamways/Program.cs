@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.DataProtection;
 using PaulSamways.Services;
 
 namespace PaulSamways
@@ -6,22 +7,33 @@ namespace PaulSamways
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            var b = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddSingleton<DataService>();
-            builder.Services.AddRazorPages();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            var dpPath = b.Configuration.GetSection("DataProtection")["KeyPath"];
+            if (!string.IsNullOrEmpty(dpPath))
             {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                b.Services
+                    .AddDataProtection()
+                    .PersistKeysToFileSystem(new DirectoryInfo(dpPath));
             }
 
+            b.Services.AddRouting(options => options.LowercaseUrls = true);
+            b.Services.AddSingleton<DataService>();
+            b.Services.AddRazorPages();
+
+            var app = b.Build();
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseHsts();
+                app.UseExceptionHandler("/Error");
+            }
+
+            app.UseStatusCodePagesWithReExecute("/Error");
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();

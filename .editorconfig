@@ -37,6 +37,8 @@ dotnet_diagnostic.rcs0044.severity = none
 dotnet_diagnostic.rcs0012.severity = none
 # Mark publicly visible type with DebuggerDisplay attribute
 dotnet_diagnostic.rcs1223.severity = none
+# Add braces
+dotnet_diagnostic.rcs1007.severity = none;
 
 # Organize usings
 dotnet_sort_system_directives_first = true
