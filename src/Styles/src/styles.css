@@ -21,6 +21,7 @@
     *::-webkit-scrollbar-corner {
         @apply bg-transparent;
     }
+
     h1,h2,h3,h4,h5,h6 {
         @apply text-yellow-500;
     }
@@ -33,7 +34,6 @@
 
     #skillsTree {
         @apply flex;
-        @apply justify-center;
     }
     #skillsTree svg {
         @apply max-w-5xl;

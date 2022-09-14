@@ -1,6 +1,6 @@
 @model Position[]
 
-<section id="experience" class="min-h-full container mx-auto pb-8">
+<section id="experience" class="min-h-full print:min-h-0 container mx-auto pb-8">
     <h2 class="text-2xl mb-8">03. <span class="text-zinc-200">Experience</span></h2>
 
     <div class="flex-shrink-0 flex flex-col">
@@ -8,16 +8,16 @@
         {
             var position = Model[i];
 
-            <div class="flex flex-shrink-0">
+            <div class="flex print:flex-col flex-shrink-0">
                 <div class="flex-shrink-0 w-80 flex flex-col">
                     <button data-position="@i" class="position flex flex-col p-4 pr-8 w-full h-full text-left border-t border-b border-zinc-700 hover:border-yellow-500 hover:bg-zinc-800">
                         <span>@position.Organisation</span>
-                        <span class="text-sm text-zinc-300">@position.Name</span>
-                        <span class="text-sm text-zinc-500">@position.StartDate - @(position.EndDate ?? "Present")</span>
+                        <span class="text-zinc-300">@position.Name</span>
+                        <span class="text-zinc-500">@position.StartDate - @(position.EndDate ?? "Present")</span>
                     </button>
                 </div>
                 <div class="flex-grow">
-                    <section data-position="@i" class="position prose prose-yellow prose-invert max-w-none pl-8 py-4 border-t border-b border-yellow-500">
+                    <section data-position="@i" class="position pl-8 py-4 border-t border-b border-yellow-500 prose prose-invert prose-yellow print:prose-slate max-w-none print:block">
                         @if (!string.IsNullOrEmpty(position.Description))
                         {
                             @Html.Raw(Markdig.Markdown.ToHtml(position.Description))

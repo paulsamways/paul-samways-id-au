@@ -1,39 +1,6 @@
-﻿@page
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Paul @ samways.id.au";
 }
-
-<section class="min-h-full container mx-auto flex flex-col justify-center gap-8">
-    <h1 class="text-7xl">Paul Samways</h1>
-    <h2 class="text-4xl">Senior Software Engineer</h2>
-    <p class="max-w-2xl">
-        I am a software engineer who has over fifteen years of experience in designing, developing and
-        maintaining software systems. I've held positions in a range of organisations, from <a
-            href="https://en.wikipedia.org/wiki/Micro_ISV" target="_blank">Micro ISVs</a> up to large
-        government research organisations.
-    </p>
-</section>
-
-@await Html.PartialAsync("_About.cshtml")
-
-@await Html.PartialAsync("_Skills.cshtml", Model.Skills)
-
-@await Html.PartialAsync("_Experience.cshtml", Model.Positions)
-
-@await Html.PartialAsync("_Education.cshtml")
-
-@section Head {
-    <script>
-        window.skillsJson = @Json.Serialize(Model.Skills);
-    </script>
-    <script src="/js/index.js" defer></script>
-}
-@section Header {
-    <header class="h-24 px-8 flex-shrink-0 flex items-center justify-end gap-8 uppercase">
-        <a asp-page="Index" asp-fragment="about">01. <span class="text-zinc-200">About me</span></a>
-        <a asp-page="Index" asp-fragment="skills">02. <span class="text-zinc-200">Skills</span></a>
-        <a asp-page="Index" asp-fragment="experience">03. <span class="text-zinc-200">Experience</span></a>
-        <a asp-page="Index" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
-    </header>
-}
+Welcome
