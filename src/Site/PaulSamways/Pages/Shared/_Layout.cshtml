@@ -22,7 +22,7 @@
 </head>
 
 <body class="h-full bg-zinc-900 text-zinc-200 font-mono flex flex-col-reverse md:flex-row print:text-zinc-800 print:bg-white print:h-auto">
-    <div class="print:hidden flex-shrink-0 md:w-16 md:border-zinc-800 md:border-r flex flex-row md:flex-col items-center justify-center md:justify-end pb-2 md:pb-4 md:pt-2 gap-4">
+    <div class="print:hidden flex-shrink-0 md:w-16 md:border-zinc-800 md:border-r flex flex-row md:flex-col items-center justify-center md:justify-end md:mr-4 pb-2 md:pb-4 md:pt-2 gap-4">
         <a href="/" title="Paul Samways" alt="Paul Samways Logo" class="hidden md:block flex-shrink-0 text-zinc-700">
             <svg class="w-12 h-12" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                 <path style="fill:#18181b;stroke:#eab308;stroke-width:24;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round" d="M32 32h448v448H32z"/>
@@ -51,7 +51,7 @@
     <div class="flex-grow flex flex-col overflow-hidden print:overflow-visible">
         @await RenderSectionAsync("Header", required: false)
 
-        <main class="flex-grow overflow-y-auto print:overflow-visible md:pr-16">
+        <main class="flex-grow scroll-smooth overflow-y-auto print:overflow-visible md:pr-16">
             @RenderBody()
         </main>
         <footer class="print:hidden h-12 flex-shrink-0 flex items-center justify-center text-zinc-400 text-sm">

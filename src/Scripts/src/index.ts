@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 v.classList.toggle("active", k === position)
             }
             for (let [k,v] of Object.entries(sections)) {
-                v.classList.toggle("hidden", k !== position)
+                v.style.display = k === position ? "block" : "";
             }
         }
 

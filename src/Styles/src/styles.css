@@ -32,6 +32,10 @@
         @apply text-yellow-500;
     }
 
+    .outline-button {
+        @apply px-4 py-1 border border-yellow-600 hover:border-yellow-500 text-zinc-200 hover:text-yellow-500;
+    }
+
     #skillsTree {
         @apply flex;
     }

@@ -6,12 +6,15 @@
 
 <section class="min-h-full container mx-auto flex flex-col justify-center gap-8 pb-8 print:min-h-0">
     <h1 class="text-7xl">Paul Samways</h1>
-    <h2 class="text-4xl">Senior Software Engineer</h2>
+    <h2 class="text-4xl">Software Engineer</h2>
     <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
-        I am a software engineer who has over fifteen years of experience in designing, developing and
-        maintaining software systems. I've held positions in a range of organisations, from <a
-            href="https://en.wikipedia.org/wiki/Micro_ISV" target="_blank">Micro ISVs</a> up to large
-        government research organisations.
+        Pragmatic software engineer who has been professionaly writing software since 2006. Experienced writing
+        modern web applications and services using .NET, TypeScript and Go.
+    </p>
+    <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
+        Currently looking for new opportunities, please <a href="#" onmouseover="this.href='mailto:'+atob('cGF1bEBzYW13YXlzLmlkLmF1')">reach out</a> if you'd like to discuss
+        how I could help with your next project.
+        
     </p>
 </section>
 
@@ -30,14 +33,14 @@
     <script src="/js/index.js" defer></script>
 }
 @section Header {
-    <header class="print:hidden h-24 px-8 flex-shrink-0 flex items-center justify-end gap-8 uppercase">
+    <header class="print:hidden h-24 px-2 md:px-6 lg:px-8 flex-shrink-0 flex items-center justify-end gap-8 uppercase">
         <a asp-page="Resume"><h1 class="text-lg pr-2 border-r border-zinc-700">Resume</h1></a>
-        <nav class="flex gap-8">
-            <a asp-page="Index" asp-fragment="about">01. <span class="text-zinc-200">About me</span></a>
-            <a asp-page="Index" asp-fragment="skills">02. <span class="text-zinc-200">Skills</span></a>
-            <a asp-page="Index" asp-fragment="experience">03. <span class="text-zinc-200">Experience</span></a>
-            <a asp-page="Index" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
+        <nav class="flex gap-4 lg:gap-8">
+            <a asp-page="Resume" asp-fragment="about">01. <span class="text-zinc-200">About me</span></a>
+            <a asp-page="Resume" asp-fragment="skills">02. <span class="text-zinc-200">Skills</span></a>
+            <a asp-page="Resume" asp-fragment="experience">03. <span class="text-zinc-200">Experience</span></a>
+            <a asp-page="Resume" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
         </nav>
-        <button type="button" onclick="window.print()" class="ml-8 px-4 py-1 border border-yellow-600 hover:border-yellow-500 text-zinc-200 hover:text-yellow-500">Print</button>
+        <button type="button" onclick="window.print()" class="hidden lg:inline-block ml-8 outline-button">Print</button>
     </header>
 }
