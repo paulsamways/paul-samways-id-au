@@ -5,6 +5,7 @@
   description: OpenSimple is an Australian software development company providing services to public and private organisations within the Canberra region.
   responsibilities:
       - Provide software development consulting/contracting services to the Australian Government.
+      - Product research and development.
   projects:
       - name: Nyggle
         url: https://nyggle.com
@@ -72,8 +73,7 @@
             effortlessly with C++/CUDA libraries.
 
             I was involved in the project from the very start of the engineering effort, and was responsible
-            for the design and development of the compute nodes. I was also involved with recruiting, and
-            growing the team to enable us to deliver the project on time.
+            for the design and development of the compute nodes.
 
 - name: Senior Software Engineer, Team Leader, Group Leader
   organisation: NICTA / CSIRO Data61

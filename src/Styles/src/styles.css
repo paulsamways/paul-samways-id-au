@@ -38,6 +38,7 @@
 
     #skillsTree {
         @apply flex;
+        @apply justify-center;
     }
     #skillsTree svg {
         @apply max-w-5xl;

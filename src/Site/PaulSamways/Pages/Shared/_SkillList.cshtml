@@ -1,0 +1,12 @@
+@model Skill
+
+<li>
+    @Model.Name
+    @if (Model.Children.Count > 0) {
+        <ul>
+            @foreach (var skill in Model.Children) {
+                @await Html.PartialAsync("_SkillList", skill)
+            }
+        </ul>
+    }
+</li>
