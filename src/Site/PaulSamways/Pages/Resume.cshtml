@@ -1,28 +1,21 @@
 ﻿@page
 @model ResumeModel
 @{
-    ViewData["Title"] = "Paul @ samways.id.au";
+    ViewData["Title"] = "Paul Samways - Resume";
 }
 
-<section class="min-h-full container mx-auto flex flex-col justify-center gap-8 pb-8 print:min-h-0">
+<section id="about" class="min-h-full container mx-auto flex flex-col justify-center gap-8 pb-8 print:min-h-0">
     <h1 class="text-7xl">Paul Samways</h1>
     <h2 class="text-4xl">Software Engineer</h2>
     <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
-        Pragmatic software engineer who has been professionaly writing software since 2006. Experienced writing
+        Professional software engineer who has been writing software since 2006. Experienced in building
         modern web applications and services using .NET, TypeScript and Go.
-    </p>
-    <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
-        Currently looking for new opportunities, please <a href="#" onmouseover="this.href='mailto:'+atob('cGF1bEBzYW13YXlzLmlkLmF1')">reach out</a> if you'd like to discuss
-        how I could help with your next project.
-        
     </p>
 </section>
 
-@await Html.PartialAsync("_About.cshtml")
+@await Html.PartialAsync("_Experience.cshtml", Model.Positions)
 
 @await Html.PartialAsync("_Skills.cshtml", Model.Skills)
-
-@await Html.PartialAsync("_Experience.cshtml", Model.Positions)
 
 @await Html.PartialAsync("_Education.cshtml")
 
@@ -37,8 +30,8 @@
         <a asp-page="Resume"><h1 class="text-lg pr-2 border-r border-zinc-700">Resume</h1></a>
         <nav class="flex gap-4 lg:gap-8">
             <a asp-page="Resume" asp-fragment="about">01. <span class="text-zinc-200">About me</span></a>
-            <a asp-page="Resume" asp-fragment="skills">02. <span class="text-zinc-200">Skills</span></a>
-            <a asp-page="Resume" asp-fragment="experience">03. <span class="text-zinc-200">Experience</span></a>
+            <a asp-page="Resume" asp-fragment="experience">02. <span class="text-zinc-200">Experience</span></a>
+            <a asp-page="Resume" asp-fragment="skills">03. <span class="text-zinc-200">Skills</span></a>
             <a asp-page="Resume" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
         </nav>
         <button type="button" onclick="window.print()" class="hidden lg:inline-block ml-8 outline-button">Print</button>
