@@ -29,6 +29,9 @@
             size: 210mm 297mm;
             margin: 0;
         }
+        body {
+            font-size: 10px;
+        }
     </style>
     <script type="text/javascript">
         const ps = new URLSearchParams(window.location.search);
@@ -38,7 +41,7 @@
     </script>
 </head>
 
-<body class="flex h-full text-xs">
+<body class="flex h-full">
     <div class="bg-zinc-200 h-full max-w-[16rem] flex-shrink-0 pt-16 pl-2">
 
         <img class="rounded-full mx-8 my-4 " alt="Paul Samways" src="img/headshot.jpeg" />
@@ -109,7 +112,7 @@
             </ul>
         </section>
     </div>
-    <div class="flex-1 px-4 py-16 flex flex-col">
+    <div class="flex-1 px-4 pt-16 pb-8 flex flex-col">
         <div class="mx-2 pb-2 border-b border-zinc-400 flex-shrink-0">
             <h1 class="text-zinc-900 text-3xl">Paul Samways</h1>
             <h2 class="text-zinc-900 text-xl">Senior Software Engineer</h2>
@@ -119,7 +122,7 @@
                 <div class="mt-6">
                     <h4 class="text-zinc-900 font-bold">@p.Name</h4>
                     <h5 class="text-zinc-700 mt-1">@p.Organisation: @p.StartDate - @(p.EndDate ?? "Present")</h5>
-                    <ul class="list-inside list-[square] ml-2 mt-2 leading-5">
+                    <ul class="list-inside list-[square] ml-2 mt-2 leading-4">
                         @foreach (var r in p.Responsibilities) 
                         {
                             <li>@Html.Raw(Markdig.Markdown.ToPlainText(r))</li>
