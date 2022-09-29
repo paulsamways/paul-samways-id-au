@@ -8,8 +8,12 @@
     <h1 class="text-7xl">Paul Samways</h1>
     <h2 class="text-4xl">Software Engineer</h2>
     <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
-        Professional software engineer who has been writing software since 2006. Experienced in building
-        modern web applications and services using .NET, TypeScript and Go.
+        Pragmatic software engineer who has been professionaly writing software since 2006.
+        Experienced in modern web application and service development using .NET, TypeScript and Go.
+    </p>
+    <p class="prose prose-invert prose-yellow print:prose-slate print:max-w-none">
+        Currently looking for new opportunities, please <a href="#" onmouseover="this.href='mailto:'+atob('cGF1bEBzYW13YXlzLmlkLmF1')">contact me</a> 
+        if you'd like to know more about my skills and experience.
     </p>
 </section>
 
@@ -34,6 +38,6 @@
             <a asp-page="Resume" asp-fragment="skills">03. <span class="text-zinc-200">Skills</span></a>
             <a asp-page="Resume" asp-fragment="education">04. <span class="text-zinc-200">Education</span></a>
         </nav>
-        <button type="button" onclick="window.print()" class="hidden lg:inline-block ml-8 outline-button">Print</button>
+        <a asp-page="ResumePrintable" asp-route-auto="1" target="_blank" class="hidden lg:inline-block ml-8 outline-button">Print</a>
     </header>
 }

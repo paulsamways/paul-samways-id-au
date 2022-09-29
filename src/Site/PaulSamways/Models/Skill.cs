@@ -21,5 +21,19 @@ namespace PaulSamways.Models
         public int? Level { get; set; }
         public IEnumerable<string>? Projects { get; set; }
         public IList<Skill> Children { get; set; }
+
+        public IEnumerable<Skill> LeafNodes()
+        {
+            if (Children.Count == 0)
+                yield return this;
+
+            foreach (var children in Children)
+            {
+                foreach (var node in children.LeafNodes())
+                {
+                    yield return node;
+                }
+            }
+        }
     }
 }

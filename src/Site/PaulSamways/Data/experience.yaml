@@ -1,10 +1,10 @@
-- name: Founder & Software Developer
+- name: Software Developer & Owner
   organisation: OpenSimple
   organisationUrl: https://opensimple.io
   startDate: September 2021
   description: OpenSimple is an Australian software development company providing services to public and private organisations within the Canberra region.
   responsibilities:
-      - Provide software development consulting/contracting services to the Australian Government.
+      - Provide software development services to the Australian Government.
       - Product research and development.
   projects:
       - name: Nyggle
@@ -39,7 +39,7 @@
           reports. The application includes complex entity resolution algorithms which operate
           over all reports held by AUSTRAC.
       - >
-          Design, deploy and maintain the data science platform (Hadoop/Spark) used for exploratory
+          Design, deploy and maintain a data science platform (Hadoop/Spark based) used for exploratory
           big-data analytics within AUSTRAC. The deployment of the platform was automated using
           Ansible scripts which allowed our operations team to reliably and repeatably deploy the
           system.
@@ -131,10 +131,7 @@
   startDate: July 2012
   endDate: July 2013
   responsibilities:
-      - Support, and maintain existing business applications
-      - Digital Rights Management (DRM) solution
-      - Customer management systems
-      - Ticketing system
+      - Support, and maintain existing business applications including digital rights management (DRM) solution, customer management system and support ticketing system.
       - XML based desktop publishing software for the NCC/BCC
       - Administer and extend the public-facing Sitecore CMS instance
       - Providing guidance on WCAG 2.0 compliance for all electronic media

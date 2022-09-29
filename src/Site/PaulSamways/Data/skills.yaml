@@ -139,9 +139,15 @@ children:
               complex data processing pipelines and algorithms which has provided me with experience on
               how to work with really big data.
   
-  - name: DevOps, tools & practices
+  - name: DevOps / Tools
     image: /img/heroicon-server-stack.svg
     children:
+        - name: Git
+          level: 4
+          image: img/technologies/git.svg
+          description: |
+              Git is an indispensible tool in my toolbox. I've worked in teams which take great pride in 
+              having clean Git history and have learnt many of the more 'advanced' Git features.
         - name: Linux
           level: 5
           image: img/technologies/linux.svg
@@ -173,27 +179,5 @@ children:
             - name: Ansible
               level: 2
               image: img/technologies/ansible.svg
-        - name: Cloud
-          image: "/img/heroicon-cloud.svg"
-          level: 3
-          description: |
-                  I have experience with the various with cloud providers, such as AWS, GCloud, Vultr, etc, and
-                  have used a variety of their hosted services. I've deploy and managed applications deployed to
-                  orchestration platforms such as Kubernetes, and AWS Fargate, and would be interested
-                  in gaining more experience in this area.
-        - name: VCS, CI/CD
-          image: img/heroicon-code-bracket-square.svg
-          children:
-            - name: Git
-              level: 4
-              image: img/technologies/git.svg
-              description: |
-                  Git is an indispensible tool in my toolbox. I've worked in teams which take great pride in 
-                  having clean Git history and have learnt many of the more 'advanced' Git features.
-            - name: Github
-              level: 2
-              image: /img/technologies/github.svg
-            - name: Gitlab
-              level: 3
-              image: /img/technologies/gitlab.svg
+
   
