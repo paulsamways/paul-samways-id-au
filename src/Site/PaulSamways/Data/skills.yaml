@@ -153,8 +153,8 @@ children:
           image: img/technologies/linux.svg
           description: |
               Linux has always been my preferred operating system. My interest goes all the way back to high school, 
-              where I'd spend countless hours tinkering and trying out different distributions. The peak of this
-              time was persisting with ([Linux From Scratch](https://www.linuxfromscratch.org/)) on my 
+              where I'd spend countless hours tinkering and trying out different distributions. The highlight of this
+              was persisting with ([Linux From Scratch](https://www.linuxfromscratch.org/)) on my 
               old Pentium 133Mhz which would take about a week to compile the entire system. 🤓
   
               This passion has become a great benefit with Linux becoming the de-facto operating system used in
