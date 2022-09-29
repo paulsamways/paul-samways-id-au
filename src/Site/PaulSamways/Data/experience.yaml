@@ -14,13 +14,13 @@
         description: |
 
             Nyggle was developed in collaboration with an ex-colleague to explore the area of customer
-            satisfaction for small-medium retail businesses. The product aims to be the online version of
+            satisfaction for small-medium retail businesses. Nyggle aims to be the online version of
             a 'suggestion box', where customers can discreetly and anonymously provide feedback
             to business owners when product or services do not meet their expectations.
 
-            The product presents to consumers as a mobile-first web application, written in React + ASP.NET, which
-            focuses on providing a quick and easy mechanism to submit feedback. Consumers can locate a business
-            by scanning QR codes located on phsyical displays, or by using the search functionality of the site.
+            The product presents to consumers as a mobile-first web application, written in React + ASP.NET, 
+            focusing on providing a quick and easy mechanism to submit feedback. Consumers can locate a business
+            by scanning QR codes located on physical displays, or by using the search functionality of the site.
             PostgreSQL's FTS, and the PostGIS extension was used to provide quick, location aware, searching
             of the OpenStreetMap data to locate businesses.
 
@@ -41,7 +41,7 @@
       - >
           Design, deploy and maintain a data science platform (Hadoop/Spark based) used for exploratory
           big-data analytics within AUSTRAC. The deployment of the platform was automated using
-          Ansible scripts which allowed our operations team to reliably and repeatably deploy the
+          Ansible scripts which allowed our operations team to reliably and repeatedly deploy the
           system.
       - >
           Provide engineering support to the data scientists within the data division of AUSTRAC. Typically
@@ -67,7 +67,7 @@
 
             The project team consisted of experts in mathematics and cryptography, whom worked in close
             collaboration with software engineers to build a proof of concept to demonstrate
-            the capbility of the system. The proof of concept system used an emebedded DSL written in
+            the capability of the system. The proof of concept system used an embedded DSL written in
             Python to coordinate the workload out to the individual nodes which were written in Go.
             Go was chosen by the team due to it's performance characteristics, and ability to interop
             effortlessly with C++/CUDA libraries.
@@ -88,7 +88,7 @@
           Communicate with the team and project stakeholders to determine priorities and goals of the
           project, and understand what success looks like.
       - >
-          Ensure that the teams are adequately resourced to deliver on their commitements, and have
+          Ensure that the teams are adequately resourced to deliver on their commitments, and have
           the resources they need to succeed
       - >
           Coach the people in the team to help them work their best, and provide support/guidance when
@@ -167,7 +167,7 @@
             was possible to work around them, it caused significant friction between the teams. I volunteered
             to spend time understanding how the various components fit together, and resolve as many of the issues
             as I could. I was able to resolve all the known issues and produced documentation to support
-            maintainance in the future.
+            maintenance in the future.
 
             The authoring platform consisted of many individual commerical and open source applications,
             integrated together using a combination of Java, JavaScript, .NET and XML/XSLT processors.
@@ -182,14 +182,14 @@
       - Design, development and support of the continuous integration tool, [FinalBuilder Server](https://www.finalbuilder.com/finalbuilder-server)
       - Continued development and support of the company's initial flagship product, [FinalBuilder](https://www.finalbuilder.com/finalbuilder)
       - Development and support of the company's ecommerce solution written as a DotNetNuke extension
-      - Provide all levels of support to our customers, and understanding their needs and requirments to help set product direction.
+      - Provide all levels of support to our customers, and understanding their needs and requirements to help set product direction.
       - Participate in a wide range of business discussions including pricing, licensing, marketing and sales
   projects:
       - name: FinalBuilder Server
         url: https://www.finalbuilder.com/finalbuilder-server
         description: |
-            FinalBuilder was the company's flaghsip product and was leading the way in build automation,
-            particulary in the Delphi world, back before CI/CD was common practice. When I joined the
+            FinalBuilder was the company's flagship product and was leading the way in build automation,
+            particularly in the Delphi world, back before CI/CD was common practice. When I joined the
             company it was becoming apparent that our users wanted to have a web-based application in
             which the could start and monitor their FinalBuilder-backed software builds.
 
@@ -205,7 +205,7 @@
       - name: ContinuaCI
         url: https://www.finalbuilder.com/continua-ci
         description: |
-            Continua CI was the replacement for FinalBuilder Server, and was envisiond to be the company's
+            Continua CI was the replacement for FinalBuilder Server, and was envisioned to be the company's
             solution to a build-tool agnostic and modern continuous integration platform.
 
             Continuing on from the development of FinalBuilder Server, it was my responsibility to architect,

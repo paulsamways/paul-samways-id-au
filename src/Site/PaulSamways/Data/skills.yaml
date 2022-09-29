@@ -24,7 +24,7 @@ children:
           level: 3
           description: |
               TypeScript has been a wonderful and pragmatic approach to improving the language situation
-              in client-side web development. I'm a big fan of strongly and statically typed langauges,
+              in client-side web development. I'm a big fan of strongly and statically typed languages,
               and TypeScript continues to impress with how expressive the type system is and how successfully
               types have been retrofitted to a language like JavaScript.
           projects:
@@ -96,7 +96,7 @@ children:
               image: img/technologies/blazor.svg
               description: |
                   Using ASP.NET's Blazor in a personal project has allowed me to evaluate how well the new framework
-                  works for non-trivial applications. I have been pleasantly suprised with how well it works,
+                  works for non-trivial applications. I have been pleasantly surprised with how well it works,
                   how far you can get without falling back to JavaScript, and how well it performs overall. I'm eager
                   to see whether it will continue to improve, and lead the way for WASM based client-side web
                   development.
@@ -105,7 +105,7 @@ children:
               level: 3
               image: img/technologies/react.svg
               description: |
-                  React (and similarily, Mithril.js) have been my go-to libraries for writing rich client-side
+                  React (and similarity, Mithril.js) have been my go-to libraries for writing rich client-side
                   web applications. I've used these libraries to write both single-page applications, and to
                   write client-side components for server-rendered pages.
               projects:
@@ -120,7 +120,7 @@ children:
           level: 4
           image: img/technologies/postgresql.png
           description: |
-              PostgreSQL has been utilized in a wide range of projects throughout my careee. I'm comfortable
+              PostgreSQL has been utilized in a wide range of projects throughout my career. I'm comfortable
               designing new database schemas/models, writing complex SQL queries, and analysing query execution plans
               to work out performance issues.
           projects:
@@ -146,7 +146,7 @@ children:
           level: 4
           image: img/technologies/git.svg
           description: |
-              Git is an indispensible tool in my toolbox. I've worked in teams which take great pride in 
+              Git is an indispensable tool in my toolbox. I've worked in teams which take great pride in 
               having clean Git history and have learnt many of the more 'advanced' Git features.
         - name: Linux
           level: 5
@@ -157,8 +157,8 @@ children:
               time was persisting with ([Linux From Scratch](https://www.linuxfromscratch.org/)) on my 
               old Pentium 133Mhz which would take about a week to compile the entire system. 🤓
   
-              This passion has become a great benefit with Linux becoming the defacto operating system used in
-              the cloud. It has given me the foundamental knowledge to understand how modern deploymnent tools like
+              This passion has become a great benefit with Linux becoming the de-facto operating system used in
+              the cloud. It has given me the fundamental knowledge to understand how modern deployment tools like
               containerisation work, and allows me to quickly get up to speed with new tools and techniques.
   
               I frequently utilise automation tools, such as Terraform and Ansible, along with simple bash
