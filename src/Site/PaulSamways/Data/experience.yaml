@@ -27,7 +27,7 @@
             Dashboards, reporting and alerts are available to business owners to view feedback, and to
             provide insights into their customer's satisfaction.
 
-            Nyggle is currently in an early staging testing.
+            Nyggle is currently in the early stage of testing.
 
 - name: Senior Analytics Engineer
   organisation: AUSTRAC
@@ -45,7 +45,7 @@
           system.
       - >
           Provide engineering support to the data scientists within the data division of AUSTRAC. Typically
-          this involved setting up Linux environments, building continuous integration pipelines,
+          this involves setting up Linux environments, building continuous integration pipelines,
           deployment and tuning of Spark applications, ETL, etc.
       - >
           Develop a proof of concept distributed graph analysis system to enable the detection of financial crime 
@@ -57,20 +57,19 @@
       - name: Alerting
         description: |
             The objective of the Alerting project was to deliver a system which could detect financial
-            crime within Australia's domestic system, without requiring reporting entities to submit
+            crime within Australia's domestic financial system, without requiring reporting entities to submit
             all domestic transaction information to AUSTRAC.
 
-            The system was built as a distributed computation system which allowed the analysis of
+            The platform was built as a distributed computation system which allowed the analysis of
             complex transaction graphs, where the connections between the accounts were
             homomorphically encrypted, preventing the disclosure of any information which a node
             does not already have.
 
-            The project team consisted of experts in mathematics and cryptography, whom worked in close
-            collaboration with software engineers to build a proof of concept to demonstrate
-            the capability of the system. The proof of concept system used an embedded DSL written in
-            Python to coordinate the workload out to the individual nodes which were written in Go.
-            Go was chosen by the team due to it's performance characteristics, and ability to interop
-            effortlessly with C++/CUDA libraries.
+            This project involved close collaboration with experts in mathematics and cryptography to 
+            build a proof of concept/MVP to demonstrate capability and viability. The system used an 
+            embedded DSL written in Python to coordinate the workload out to the individual 
+            nodes which were written in Go. Go was chosen due to it's performance characteristics, 
+            and ability to interop effortlessly with C++/CUDA libraries.
 
             I was involved in the project from the very start of the engineering effort, and was responsible
             for the design and development of the compute nodes.
@@ -83,16 +82,16 @@
   responsibilities:
       - >
           As a software engineer, and in collaboration with research teams, design and develop
-          software systems which bring new innovative ideas out into the world.
+          software systems which bring cutting-edge research out into commercialisable products.
       - >
-          Communicate with the team and project stakeholders to determine priorities and goals of the
-          project, and understand what success looks like.
+          Communicate with the team and project stakeholders to determine priorities and success criteria for the
+          projects.
       - >
           Ensure that the teams are adequately resourced to deliver on their commitments, and have
-          the resources they need to succeed
+          the resources required for success.
       - >
-          Coach the people in the team to help them work their best, and provide support/guidance when
-          they need it.
+          Coach members in the team to help them work their best, and provide support/guidance when
+          required.
   projects:
       - name: Regulation as a Platform (RaaP)
         url: https://data61.csiro.au/en/Our-Research/Our-Work/Future-Cities/Optimising-service-delivery/RaaP
@@ -100,10 +99,10 @@
             Regulation as a Platform (RaaP) ran as a collaboration between the Dept. of Industry and CSIRO Data61
             in the [NISA: Platforms for Open Data](https://www.industry.gov.au/data-and-publications/national-innovation-and-science-agenda-report)
             program. Building upon the research conducted by the legal informatics team within Data61, 
-            we built a platform to encode parts of Australia's legislation as sets of digital logic rules, 
+            we created a platform to encode parts of Australia's legislation as sets of digital logic rules, 
             and proof of concept applications to demonstrate utility.
 
-            The platform consisted of multiple back-end services, written in Haskell, Scala or Python, and
+            The platform consisted of multiple back-end services written in Haskell, Scala or Python and
             deployed into a Kubernetes cluster running on the Google Cloud infrastructure. The platform's rule
             authoring application was written in TypeScript using Mithril.js and designed as a single-page
             application.
@@ -111,13 +110,13 @@
         url: https://www.canberra.edu.au/research/institutes/health-research-institute/research-areas/active-community-project
         description: |
             ACTive Community was a program run by the University of Canberra to investigate the activity levels
-            of Canberrans through fitness tracking devices. The development of the system used to register
-            participant devices and collect data over the study period was conducted by CSIRO Data61, in which I was
-            the principal software engineer.
+            of Canberrans through fitness tracking devices. I was the principal engineer and designed the system 
+            used to register participant devices and collect data over the study period.
 
             The system required a web front-end, written as a single-page application using the Mithril.js
             library, which enabled participants to join the study and connect their Fitbit or Garmin fitness
             devices.
+
             Once a device was connected, we were able to retrieve the participant's activity history and then poll
             each day for new fitness data. The RESTful API and background polling mechanism was written in Haskell
             and deployed alongside a PostgreSQL database.
@@ -134,7 +133,7 @@
       - Support, and maintain existing business applications including digital rights management (DRM) solution, customer management system and support ticketing system.
       - XML based desktop publishing software for the NCC/BCC
       - Administer and extend the public-facing Sitecore CMS instance
-      - Providing guidance on WCAG 2.0 compliance for all electronic media
+      - Provide guidance on WCAG 2.0 compliance for all electronic media
   projects:
       - name: Certification Management System
         description: |
@@ -147,13 +146,9 @@
             included vulnerabilities such as SQL injection, broken authentication/credential management, and
             a design which allowed the client (browser) to access data in an uncontrolled way.
 
-            Due to the constraints around the project, we were not able to change the dates of when
-            we were required to have the software operational. After discussion with the stakeholders
-            and management, it was decided that I would spend a month rewriting/refactoring the
-            application layer to bring it up to the standard we required to deploy to our servers.
-
-            I was able to achieve feature parity and address all known security issues, and we successfully
-            deployed the application by the required date.
+            I rewrote/refactored the system as a new ASP.NET application, maintaining all the existing features,
+            and was able to have it deployed within the original project timelines.
+             
 
       - name: XML Publishing System
         description: |
@@ -162,7 +157,7 @@
             in-house by the technical team. Management and ownership of the software platform was handled by
             our team.
 
-            When I joined the organisation, it had been close to ten years since the system had been deployed
+            By the time I had joined the organisation it had been almost ten years since the system had been deployed
             and was starting to show its age. There were many bugs and issues which had arisen and, while it
             was possible to work around them, it caused significant friction between the teams. I volunteered
             to spend time understanding how the various components fit together, and resolve as many of the issues
@@ -189,18 +184,18 @@
         url: https://www.finalbuilder.com/finalbuilder-server
         description: |
             FinalBuilder was the company's flagship product and was leading the way in build automation,
-            particularly in the Delphi world, back before CI/CD was common practice. When I joined the
-            company it was becoming apparent that our users wanted to have a web-based application in
-            which the could start and monitor their FinalBuilder-backed software builds.
+            particularly in the Delphi market. Not long after joining the company it was became apparent that 
+            our users wanted to have a web-based application in which they could start and monitor their FinalBuilder 
+            software builds.
 
-            It wasn't long after working with the team on this new project that I was given the responsibility
-            of leading the development of it. Since the company had predominately been Delphi focused,
-            but wanted to expand into the new .NET ecosystem, it was decided that it would use .NET/C#
-            to write the web application and supporting Windows services.
+            I was given the opportunity to lead the development of this new product, as we were aiming to make 
+            headway into the new .NET ecosystem, and I had the most knowledge. We built the product using .NET/C#,
+            using ASP.NET WebForms for UI, and hosted a supervisor process as a Windows service controlling the
+            individual build processes.
 
             I regard this project as one of the great successes of my career so far and often admire what we were
             able to achieve with so few resources. The were able to build a lot of great relationships with
-            our customers, and provide them with software they genuinely loved and were excited about.
+            our customers, and provide them with software they genuinely loved and felt passionate about.
 
       - name: ContinuaCI
         url: https://www.finalbuilder.com/continua-ci
@@ -213,12 +208,12 @@
             services; web application, build coordinator and build agents. They services communicated with
             each other using WCF, with the coordinator using PostgreSQL as the data store.
 
-            Noteworthy parts of the project which I developed include:
+            Significant parts of the project which I developed include:
 
               - Building extension points in the application which enabled the development of plugins. The system 
-                used AppDomains to isolate loading of foreign assemblies, and allowed plugins to be reloaded.
-              - Using .NET attributes to decorate plugin class properties, and then using these properties to
-                generating web controls for editing/viewing in the interface.
+                used AppDomains to isolate loading of foreign assemblies and allowed plugins to be reloaded.
+              - Using .NET attributes to decorate plugin class properties and using these properties to
+                generate web controls for editing/viewing in the interface.
               - Build workflow engine. FinalBuilder was known for it's graphical interface and we wanted
-                to replicate this kind of visual environment in the browser. I designed the workflow engine, and the
+                to replicate this kind of visual environment in the browser. I designed the workflow engine and the
                 web interface for constructing build workflows.
