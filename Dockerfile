@@ -17,6 +17,7 @@ RUN cd ./src/Scripts && \
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-site
 WORKDIR /build
 
+COPY ./Directory.Packages.props ./Directory.Packages.props
 COPY ./src/Site ./src/Site
 COPY --from=build-styles /build/src/Site/PaulSamways/wwwroot/css/site.css ./src/Site/PaulSamways/wwwroot/css/site.css
 COPY --from=build-scripts /build/src/Site/PaulSamways/wwwroot/js ./src/Site/PaulSamways/wwwroot/js
