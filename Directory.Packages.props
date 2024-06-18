@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+    <TargetFramework>net8.0</TargetFramework>
+    <Authors>Paul Samways</Authors>
+    <Company>OpenSimple</Company>
+    <RepositoryUrl>https://github.com/paulsamways/paul-samways-id-au</RepositoryUrl>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+</Project>

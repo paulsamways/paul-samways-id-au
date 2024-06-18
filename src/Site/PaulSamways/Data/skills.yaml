@@ -10,7 +10,7 @@ children:
           description: |
               .NET / C# has been a cornerstone of my career and I've been using and following its development
               since C# 1.1. While there are many other languages which I use, I still enjoy going back to C#.
-              Microsoft's recent efforts in making the platform cross-platform and open-source  has been an exciting 
+              Microsoft's recent efforts in making the platform cross-platform and open-source has been an exciting 
               development, and one which gives me confidence in continuing to invest in the ecosystem.
           projects:
               - nyggle

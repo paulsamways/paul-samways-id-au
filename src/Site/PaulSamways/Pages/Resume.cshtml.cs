@@ -15,6 +15,7 @@ public class ResumeModel : PageModel
         _data = data;
 
         Positions = Array.Empty<Position>();
+        Skills = new Skill();
     }
 
     public Position[] Positions { get; set; }

@@ -1,3 +1,19 @@
+- name: Development Team Lead
+  organisation: Aristotle Metadata
+  organisationUrl: https://www.aristotlemetadata.com/
+  startDate: March 2023
+  description: |
+    Aristotle Metadata helps organisations of all shapes and sizes record information about their data, so they can provide evidence-based, positive outcomes for their stakeholders.
+  responsibilities:
+    - Oversee the planning, execution, and delivery of software development projects.
+    - Lead, mentor, and develop team members to enhance their skills and career growth.
+    - Foster a collaborative and inclusive team environment, promoting knowledge sharing and continuous improvement.
+    - Conduct regular one-on-one meetings, performance reviews, and provide constructive feedback.
+    - Ensure the team follows best practices for coding standards, testing, and documentation.
+    - Participate in code reviews to maintain code quality and share expertise.
+    - Design, develop, and maintain new features and enhancements for our products.
+    - Ensure performance, scalability, and reliability of our SaaS products.
+
 - name: Software Developer & Owner
   organisation: OpenSimple
   organisationUrl: https://opensimple.io
@@ -33,6 +49,7 @@
   organisation: AUSTRAC
   organisationUrl: https://www.austrac.gov.au/
   startDate: November 2019
+  endDate: November 2022
   responsibilities:
       - >
           Support and maintain a large Spark application which analyses financial transaction
