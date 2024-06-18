@@ -14,7 +14,7 @@ RUN cd ./src/Scripts && \
         npm install && \
         ./build.sh
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-site
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-site
 WORKDIR /build
 
 COPY ./src/Site ./src/Site
@@ -24,7 +24,7 @@ COPY --from=build-scripts /build/src/Site/PaulSamways/wwwroot/js ./src/Site/Paul
 RUN ./src/Site/build.sh
 
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
 VOLUME ["/root/.aspnet/DataProtection-Keys"]
