@@ -19,9 +19,9 @@ children:
               - finalbuilder-server
               - continuaci
   
-        - name: Typescript
+        - name: JavaScript / TypeScript
           image: img/technologies/typescript.svg
-          level: 3
+          level: 4
           description: |
               TypeScript has been a wonderful and pragmatic approach to improving the language situation
               in client-side web development. I'm a big fan of strongly and statically typed languages,
@@ -42,6 +42,10 @@ children:
           projects:
               - alerting
   
+        - name: Python
+          image: img/technologies/python.svg
+          level: 3
+
         - name: Haskell
           image: img/technologies/haskell.png
           level: 3
@@ -112,7 +116,11 @@ children:
                   - nyggle
                   - regulation-as-a-platform-(raap)
                   - active-community
-  
+
+            - name: Vue.js
+              level: 4
+              image: img/technologies/vuejs.svg
+
   - name: Data
     image: /img/heroicon-circle-stack.svg
     children:
